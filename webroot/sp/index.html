@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=320, initial-scale=1, minimum-scale=1">
+		<title>東京大学神社研究会</title>
+		<link rel="stylesheet" href="style.css"> 
+		<script src="../js/jquery-1.10.1.min.js"></script>
+		<script src="../js/flipsnap.min.js"></script>
+		<script>
+			var itemnum = 3;
+		</script> <!-- itemnumの初期化 -->
+		<script>
+			$(function(){
+				// sp だと css, js ロードまでのタイムラグが無視できず、開いた状態が見えて汚いので
+				// こんなキモいことをしています。いい方法があれば変更してください。
+				$('#wrapper-id1').html('<div class="id1 submenu">' +
+						'<ul class="folder icon">' +
+							'<li class="left"><a href="tour.html">探訪部会</a></li>'+
+							'<li><a href="study.html">勉強部会</a></li>'+
+							'<li><a href="mystery.html">怪異部会</a></li>'+
+							'<li class="right"><a href="kagura.html">神楽部会</a></li>'+
+							'<li class="left"><a href="gagaku.html">雅楽部会</a></li>'+
+							'<li><a href="booklet.html">会誌</a></li>' +
+						'</ul>' +
+					'</div');
+				$('#wrapper-id2').html('<div class="id2 submenu">' +
+						'<ul class="folder icon">' +
+							'<li class="left"><a href="faq.html">FAQ</a></li>' +
+							'<li><a href="admission.html">入会<br>するには</a></li>' +
+							'<li><a href="contact.html">連絡を<br>取るには</a></li>' +
+							'<li class="right"><a href="place.html">活動場所</a></li>' +
+						'</ul>' +
+					'</div');
+				$('.submenu').hide();
+				$('#globalnav > li.id2').click(function(){
+					if($('.submenu.id1').is(':visible')){
+						$('.submenu.id1').slideUp('normal', function(){
+							$('.submenu.id2').slideDown();
+						});
+					} else {
+						$('.submenu.id2').slideToggle();
+					}
+				});
+				
+				$('#globalnav > li.id1').click(function(){
+					if($('.submenu.id2').is(':visible')){
+						$('.submenu.id2').slideUp('normal', function(){
+							$('.submenu.id1').slideDown();
+						});
+					} else {
+						$('.submenu.id1').slideToggle();
+					}
+				});
+			});
+			
+			$(window).on('load resize orientationchange', function(){ // orientationchange でiphone 本当に表示かわるかテスト
+				var iconwidth = $('ul.icon > li').width();
+				$('ul.icon > li').height(iconwidth);
+				$('.submenu.id1 .folder').height(iconwidth * 2 + 10);
+				$('.submenu.id2 .folder').height(iconwidth + 10);
+			});
+		</script><!-- navのアニメーションと各アイコン比率調整（リキッドレイアウト版） -->
+	</head>
+	<body>
+		<div id="container">
+			<header id="global">
+				<h1>東京大学神社研究会<br><span class="small">The University Of Tokyo Society for Jinja Studies</span></h1>
+			</header>
+			<div id="content">
+				<div class="viewpoint">
+					<div class="flipsnap">
+						<div class="item"><img src="cimg/img3.jpg"></div>
+						<div class="item"><img src="cimg/img2.jpg"></div>
+						<div class="item"><img src="cimg/img1.jpg"></div>
+					</div><!-- flipsnap -->
+				</div><!-- viewpoint -->
+				<script>
+					var flipsnap = Flipsnap('.flipsnap');
+					flipsnap.moveToPoint(itemnum, 0);
+					var istouching = false;
+					var timer;
+					
+					function automove(){
+						if(!istouching){
+							if(flipsnap.hasPrev()){
+								flipsnap.toPrev(500);
+							} else {
+								flipsnap.moveToPoint(itemnum, 500);
+							}
+						}
+					}
+					
+					timer = setInterval('automove()', 5000);
+					
+					flipsnap.element.addEventListener('fstouchstart', function(){
+						istouching = true;
+						clearInterval(timer);
+					}, false);
+					flipsnap.element.addEventListener('fstouchend', function(ev){
+						istouching = false;
+						timer = setInterval('automove()', 5000);
+					}, false);
+					
+					// 以下ウィンドウリサイズ時の比率処理（flipsnap）
+					var tim = false;
+					var isfirsttime = true;
+					$(window).resize(function(){
+						if(isfirsttime === true){
+							$('.flipsnap').fadeTo(100, 0);
+							isfirsttime = false;
+						}
+						if(tim !== false){
+							clearTimeout(tim);
+						}
+						tim = setTimeout(function(){
+							flipsnap.refresh();
+							$('.flipsnap').fadeTo(300, 1);
+							isfirsttime = true;
+						}, 300);
+					});
+					
+				</script> <!-- flipsnap起動＆automoveのイベント登録 -->
+				<nav>
+					<ul id="globalnav" class="clearfix icon">
+						<li class="left"><a href="about.html">神社研究会<br>について</a></li>
+						<li class="id1">活動内容</li>
+						<li><a href="media.html">メディア<br>での紹介</a></li>
+						<li class="right id2">アクセス</li>
+					</ul>
+					<div id="wrapper-id1"></div>
+					<div id="wrapper-id2"></div>
+				</nav>
+				<nav>
+					<ul class="tb">
+						<li class="left"><a href="https://twitter.com/jinjaken">twitter</a></li>
+						<li class="right"><a href="http://jinzya.blog86.fc2.com/">blog</a></li>
+					</ul>
+				</nav>
+				<section class="notion">
+					<h2>コミアカ09情報</h2>
+					<hr class="w100">
+					<article>
+						<p>神社研は<a href="http://comiaca.dojin.com" target="_blank">コミックアカデミー09</a>（2014.11.23,24）の２日目（駒場祭３日目）に参加します。<br>
+						千五百秋第六号を300円で頒布するので、興味のある方はぜひお買い求めください。</p>
+						<table class="wb">
+							<tr><td>日時</td><td>2014.11.24（月・祝） 10:00〜15:30</td></tr>
+							<tr><td>教室</td><td>12号館1階1214教室</td></tr>
+							<tr><td>スペース</td><td><a href="http://comiaca.dojin.com/catalog09.html" target="_blank">S1</a></td></tr>
+							<tr><td>頒布品</td><td>千五百秋第六号<br>その他千五百秋バックナンバー</td></tr>
+							<tr><td>価格</td><td>300円</td></tr>
+							<tr><td>内容</td><td><span class="bold">第六号の特集は「熊野」です！</span><br>各部会活動紹介<br>神社四コマ漫画<br>旅行記<br>研究</td></tr>
+						</table>
+					</article>
+				</section>
+				<section class="notion">
+					<h2>お知らせ</h2>
+					<hr class="w100">
+					<article>
+						<h3><span class="bold">【2014年度新歓情報】</span><br><data>2014.03.29</data></h3>
+						<p><a href="shinkan2014.html">こちら</a> からご覧いただけます。</p>
+					</article>
+					<hr>
+					<article>
+						<h3>スマートフォンに対応<br><data>2013.09.12</data></h3>
+						<p>神社研ホームページがスマートフォンから見やすいデザインになりました。</p>
+					</article>
+					<hr>
+					<article>
+						<h3>第86回五月祭のおしらせ<br><data>2013.05.16</data></h3>
+						<p>今週末の5/18，19には東京大学で五月祭が行われます。神社研は19日に神楽部会の発表を行います。</p>
+					</article>
+					<hr>
+					<article>
+						<h3>平成25年度　新歓活動＆定期活動予定<br><data>2013.03.29</data></h3>
+						<p>詳しくは <a href="http://jinzya.blog86.fc2.com">神社研ブログ</a> で。</p>
+					</article>
+					<hr>
+					<article>
+						<h3>会誌『千五百秋』第三号の情報を追加しました<br><data>2011.11.22</data></h3>
+						<p>会誌『千五百秋』のページに、第三号の情報を追加しました。</p>
+					</article>
+					<hr class="w100">
+					<article>
+					<p><a href="http://jinzya.web.fc2.com/?mode=pc">pc版表示へ</a></p>
+					</article>
+				</section>
+			</div><!-- content -->
+			<div id="footer">
+				<footer id="global">
+					<p><small>&copy 2007-2013 東京大学神社研究会</small></p>
+				</footer>
+			</div><!-- footer -->
+		</div><!-- container -->
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-11197007-1', 'fc2.com');
+  ga('send', 'pageview');
+
+</script>
+	</body>
+</html>

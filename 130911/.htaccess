@@ -1,0 +1,41 @@
+RewriteEngine On
+RewriteCond %{HTTP_USER_AGENT} (iPhone|Android.*Mobile|Windows.*Phone) [NC]
+RewriteCond %{QUERY_STRING} !mode=pc
+RewriteRule ^$ /sp/ [R,L]
+
+ErrorDocument 404 http://jinzya.web.fc2.com/
+ErrorDocument 403 http://jinzya.web.fc2.com/
+Options -Indexes
+Redirect permanent /katsudou.html http://jinzya.web.fc2.com/act.html
+Redirect permanent /kifu.html http://jinzya.web.fc2.com/
+Redirect permanent /gakkyuu/gakkyuu.html http://jinzya.web.fc2.com/act-study.html
+Redirect permanent /isonokami.html http://jinzya.web.fc2.com/magazine.html
+Redirect permanent /tanpou.html http://jinzya.web.fc2.com/act-sansaku.html
+Redirect permanent /about/about.html http://jinzya.web.fc2.com/introduction.html
+Redirect permanent /bunshuu/gokoku.html http://jinzya.web.fc2.com/magazine.html
+Redirect permanent /tanpou/megaten.html http://jinzya.web.fc2.com/event-fes.html
+Redirect permanent /kaishi/soukannozi.html http://jinzya.web.fc2.com/magazine.html
+Redirect permanent /pv.html http://jinzya.web.fc2.com/introduction.html
+Redirect permanent /tanpou/gogatusai.html http://jinzya.web.fc2.com/event-fes.html
+Redirect permanent /bunshuu/kyouiku.html http://jinzya.web.fc2.com/magazine.html
+Redirect permanent /tanpou/nichinichi.html http://jinzya.web.fc2.com/spe-media.html
+Redirect permanent /about/soshiki.html http://jinzya.web.fc2.com/introduction.html
+Redirect permanent /tanpou/haison.html http://jinzya.web.fc2.com/act-sansaku.html
+Redirect permanent /kaishi/soukan.html http://jinzya.web.fc2.com/magazine.html
+Redirect permanent /tanpou/shokuzyu.html http://jinzya.web.fc2.com/act-sansaku.html
+Redirect permanent /tanpou/ooyama.html http://jinzya.web.fc2.com/act-sansaku.html
+Redirect permanent /tanpou/nakano.html http://jinzya.web.fc2.com/act-sansaku.html
+Redirect permanent /up.html http://jinzya.web.fc2.com/file.html
+Redirect permanent /shishin.html http://jinzya.web.fc2.com/introduction.html
+Redirect permanent /bunshuu.html http://jinzya.web.fc2.com/magazine.html
+Redirect permanent /radio.html http://jinzya.web.fc2.com/spe-media.html
+Redirect permanent /other.html http://jinzya.web.fc2.com/
+Redirect permanent /gagaku/gagaku.html http://jinzya.web.fc2.com/act-gagaku.html
+Redirect permanent /tanpou/kizi.html http://jinzya.web.fc2.com/act-sansaku.html
+Redirect permanent /about/chiiki.html http://jinzya.web.fc2.com/local.html
+Redirect permanent /houmei.html http://jinzya.web.fc2.com/
+Redirect permanent /tanpou/keisetu.html http://jinzya.web.fc2.com/spe-media.html
+Redirect permanent /tanpou/yasukuni.html http://jinzya.web.fc2.com/event-fes.html
+Redirect permanent /tanpou/zindaizi.html http://jinzya.web.fc2.com/act-sansaku.html
+Redirect permanent /tanpou/asanama.html http://jinzya.web.fc2.com/act-sansaku.html
+

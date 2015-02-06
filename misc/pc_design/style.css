@@ -1,0 +1,322 @@
+@charset "utf-8";
+*{ margin: 0; padding: 0; }
+ul,ol{ list-style: none; }
+a{ text-decoration: none; }
+img{ vertical-align: middle; }
+header, footer, nav, section, article, figure, aside { display:block; }
+
+.clearfix:after { /*floatの解除、ここがポイント*/
+    display:block;
+    clear:both;
+    height:0px;
+    visibility:hidden;
+    content:".";
+}
+.clearfix {
+    min-height: 1px; /*IE6、7対策*/
+}
+* html .clearfix {
+    height: 1px;
+    /*¥*//*/ /*MAC IE5.x対策*/
+    height: auto;
+    overflow: hidden;
+}
+
+a {
+	color: #2e93ff;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body { 
+	font-size: 16px;
+	font-size: 1.6rem;
+	background-image: url(bg.gif);
+}
+
+img.right { float: right; }
+
+div#header {
+	padding-top: 70px;
+/*
+	border-bottom: solid 1px #348f35;
+*/}
+
+header#globalhead {
+	width: 900px;
+	margin: 0 auto;
+	/*background-image: url(hi.png);
+	*/background-position: right bottom;
+	background-repeat: no-repeat;
+}
+
+header#globalhead:before {
+}
+
+header#globalhead h1 {
+	font-family: "Hiragino Maru Gothic Pro" ,"HGMaruGothicMPRO";
+	font-weight: lighter;
+	font-size: 30px;
+	font-size: 3rem;
+	float: left;
+	width: 9em;
+	/*padding: 30px 0 25px 0;
+*/}
+
+header#globalhead ul {
+	float: left;
+}
+
+header#globalhead li {
+	float: left;
+	font-size: 13px;
+	font-size: 1.3rem;
+	font-weight: bold;
+	line-height: 2;
+	margin-left: 20px;
+	margin-top: 15px;
+	margin-top: 1.5rem;
+}
+
+header#globalhead li a {
+	color: #000000;
+}
+
+header#globalhead li a:hover {
+	text-decoration: none;
+	color: #777777;
+}
+
+header#globalhead li a.now {
+	color: #348f35;
+}
+
+header#globalhead li a.now:hover {
+	text-decoration: none;
+	color: #78bd79;
+}
+
+h1 a {
+	font-family: "Hiragino Maru Gothic Pro" ,"HGMaruGothicMPRO";
+	font-weight: lighter;
+	font-size: 30px;
+	font-size: 3rem;
+	color: #000000;
+}
+
+h1 a:hover {
+	text-decoration: none;
+}
+
+div#content {
+	width: 900px;
+	margin: 0 auto;
+}
+
+div#nicontent { /* not-index contents */
+	width: 900px;
+	margin: 0 auto;
+}
+
+div#nicontent h2 {
+	font-weight: lighter;
+	margin: 20px;
+	margin-left: -5px;
+	margin-top: 0px;
+	padding: 10px;
+	padding-left: 20px;
+	border-left: solid 5px #ee827c;
+	position: relative;
+	width: 10em;
+	z-index: 1;
+}
+
+div#nicontent h3 {
+	border-left: solid 5px #fcc800;
+	font-weight: lighter;
+	margin-left: 15px;
+	padding: 5px;
+	padding-left: 20px;
+}
+
+div#nicontent section.child p {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+div#nicontent section.child {
+	background-color: #ffffff;
+	border: solid 1px #f4e4b0;
+	border-radius: 3px;
+	padding-top: 20px;
+	margin: 40px 0;
+}
+
+div#nicontent p {
+	padding: 20px;
+	padding-top: 40px;
+	margin-top: -35px;
+	position: relative;
+	z-index: 0;
+}
+
+div#nicontent article {
+	width: 498px;
+	margin-bottom: 20px;
+	background-color: #f8f4e6;
+	border: solid 1px #f5e5b1;
+	padding: 40px;
+}
+
+div#nicontent article p {
+	
+	line-height: 1.7;
+}
+
+div#nicontent article:nth-last-child(1){
+	margin-bottom: 0;
+}
+
+div#nicontent div#leftboxes {
+	float: left;
+	width: 580px;
+	margin: 5px 10px 0 0;
+}
+
+div#nicontent div#rightboxes {
+	width: 300px;
+	margin: 5px 0 0 10px;
+	float: right;
+}
+
+div#rightboxes img {
+	padding: 40px;
+	border: solid 1px #c7dc68;
+	margin-bottom: 20px;
+	background-color: #d8e698;
+}
+
+div#rightboxes img:nth-last-child(1) {
+	margin-bottom: 0;
+}
+
+div.box1 {
+	width: 565px;
+	height: 565px;/*
+	border: solid 1px #436f3f;
+	background-color: #436f3f;*/
+	background-image: url(img62.png);
+	background-size: cover;
+	margin: 5px 5px 5px 0;
+	float: left;
+	color: #ffffff;
+}
+
+div.box2 {
+	width: 323px;
+	height: 563px;
+	border: solid 1px #59a25d;
+	background-color: #59a25d;
+	margin: 5px 0 5px 5px;
+	float: left;
+	color: #ffffff;
+}
+
+div.box3 {
+	width: 563px;
+	height: 163px;
+	border: solid 1px #589c82;
+	background-color: #589c82;
+	margin: 5px 5px 5px 0;
+	float: left;
+	color: #ffffff;
+}
+
+div.box4 {
+	width: 325px;
+	height: 165px;
+	background-color: #ed8174;
+	background-image: url(tri.png);
+	background-position: right bottom;
+	background-size: 100px;
+	background-repeat: no-repeat;
+	margin: 5px 0 5px 5px;
+	float: left;
+	color: #ffffff;
+}
+
+div#boxlist h2 {
+	font-weight: lighter;
+	padding: 15px 15px 10px 15px;
+}
+
+div.box2 h2 {
+	padding: 25px 0 15px 20px!important;
+}
+
+div#boxlist p {
+	padding: 5px 30px;
+	line-height: 1.8;
+}
+
+div.box4 p {
+	font-size: 25px;
+	font-size: 2.5rem;
+	line-height: 1!important;
+	padding: 10px 0 0 30px!important;
+}
+
+p.blog {
+	margin-top: 20px!important;
+}
+
+div.box4 a {
+	font-family: "Courier New"!important;
+	font-weight: lighter;
+}
+
+div.box4 a:hover {
+	font-weight: bolder!important;
+}
+
+div#boxlist a {
+	color: #ffffff;
+}
+
+div#boxlist a:hover {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+p.go {
+	line-height: 3.5!important;
+}
+
+p.right {
+	text-align: right;
+	position: relative;
+	margin-top: -30px;
+	padding-right: 20px!important;
+}
+
+ul#news li {
+	padding: 0 25px;
+}
+
+
+
+footer#globalfooter {
+	width: 900px;
+	margin: 0 auto;
+	padding-bottom: 70px;
+}
+
+footer#globalfooter p.copy {
+	text-align: right;
+}

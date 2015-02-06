@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title>東京大学神社研究会 - 勉強部会</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="../js/jquery-1.10.1.min.js"></script>
+		<script>
+			$(function(){
+				$(".submenu").hide();
+				$("#globalnav > li.id2").click(function(){
+					if($('.submenu.id1').is(':visible')){
+						$(".submenu.id1").slideUp("normal", function(){
+							$(".submenu.id2").slideDown();
+						});
+					} else {
+						$(".submenu.id2").slideToggle();
+					}
+				});
+				
+				$("#globalnav > li.id1").click(function(){
+					if($('.submenu.id2').is(':visible')){
+						$(".submenu.id2").slideUp("normal", function(){
+							$(".submenu.id1").slideDown();
+						});
+					} else {
+						$(".submenu.id1").slideToggle();
+					}
+				});
+			});
+		</script><!-- navのアニメーション -->
+	</head>
+	<body><!--
+		<header id="globalhead">
+			<h1>東京大学神社研究会<br><span class="small">The University Of Tokyo Shinto Shrine Circle</span></h1>
+		</header>-->
+		<div id="container">
+			<div id="content">
+				<!-- <nav>
+					<ul id="globalnav" class="clearfix icon">
+						<li class="left">神社研究会<br>について</li>
+						<li class="id1">活動内容</li>
+						<li>メディア<br>での紹介</li>
+						<li class="right id2">アクセス</li>
+					</ul>
+					<div class="id1 submenu">
+						<ul class="folder icon">
+							<li class="left"><a href="#">探訪部会</a></li>
+							<li><a href="#">勉強部会</a></li>
+							<li><a href="#">怪異部会</a></li>
+							<li class="right"><a href="#">神楽部会</a></li>
+							<li class="left"><a href="#">雅楽部会</a></li>
+							<li><a href="#">会誌</a></li>
+						</ul>
+					</div>
+					<div class="id2 submenu">
+						<ul class="folder icon">
+							<li class="left"><a href="#">FAQ</li>
+							<li><a href="#">入会<br>するには</a></li>
+							<li><a href="#">連絡を<br>取るには</a></li>
+							<li class="right"><a href="#">活動場所</a></li>
+						</ul>
+					</div>
+				</nav>
+				<nav>
+					<ul class="tb">
+						<li class="left"><a href="#">twitter</a></li>
+						<li class="right"><a href="#">blog</a></li>
+					</ul>
+				</nav> -->
+				<section id="group">
+					<h2>勉強部会</h2>
+					<nav><p class="bread"><a href="#">トップページ</a> > <a href="#">勉強部会</a></p></nav>
+					<article>
+						<h3>勉強部会について</h3>
+						<hr>
+						<p>
+							勉強部会では人類普遍の営みである宗教文化への理解を深めます。神社・神道は、日本の伝統文化と深く結びついており、神社や神道に関する知識を得ることで、より日本文化を豊かに楽しむことができます。勉強部会では、神社・神道の歴史や文化について勉強します。有名な神社や、神話、神々について調べたり、話したりします。神道だけではなく、仏教の知識はもちろん、必要に応じて各宗教の知識や、現代日本の宗教事情についても学びます。
+<br><br>
+前々年度は、日本神話『古事記』を読んでいました。『古事記』は神社・神道における基本的な文献です。現存最古の歴史書として知られていますが、『古事記』はさまざまな顔を持っています。『古事記』は歴史書としても読めるし、文学としても読めます。そして、神話としても読めます。神話は神話であって、教えを説く説話ではありません。世界の起源を語り、文化の起源を語るものです。
+<br><br>
+そして忘れてならないのが神道古典としての『古事記』の顔です。『古事記』以前に神話がどうであったかとは別に、『古事記』以後、神話が神道の歴史にどのように影響を与えてきたのかという観点です。『古事記』と神社、祭神、祭祀、芸能、思想、歴史などの神社文化がどのように関連しているのかを探求します。
+
+						</p>
+					</article>
+					<article>
+						<h3>imgのサンプル↓</h3>
+						<hr>
+						<p>
+							画像背景にして文字かぶせるjsも書こう
+						</p>
+					</article>
+					<article>
+						<img src="img1.jpg" width="310px">
+					</article>
+					<article>
+						<h3>活動</h3>
+						<hr>
+						<p>
+							前年度からは、「神社巡りのための予備知識」と題して、ゼミ形式の勉強会を開催しています。 参加者が交代で、発表をし、みなで討議をいたします。 「神社巡りのための」とは冠しましたが、神社、神道、民俗宗教に関わることなら何でもかまいません。参加意識を高めるために目的を設定しているだけです。各自の関心に基づいて、発表してください。 新入生の方は、後期より発表していただくことになると思います。ふるってご参加ください。 
+						</p>
+					</article>
+				</section>
+			</div><!-- content -->
+			<nav id="fullnav" class="clearfix">
+				<h2>記事一覧</h2>
+				<ul class="parent">
+					<li><a href="#">トップページ</a></li>
+					<li><a href="#">神社研究会について</a></li>
+					<li>活動内容</li>
+					<ul class="child">
+						<li><a href="#">探訪部会</a></li>
+						<li><a href="#">勉強部会</a></li>
+						<li><a href="#">怪異部会</a></li>
+						<li><a href="#">神楽部会</a></li>
+						<li><a href="#">雅楽部会</a></li>
+						<li><a href="#">会誌</a></li>
+					</ul>
+				</ul>
+				<ul class="parent">
+					<li><a href="#">メディアでの紹介</a></li>
+					<li>アクセス</li>
+					<ul class="child">
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">入会するには</a></li>
+						<li><a href="#">連絡を取るには</a></li>
+						<li><a href="#">場所の案内</a></li>
+					</ul>
+					<li>ブログ・twitter</li>
+					<ul class="child">
+						<li><a href="#">ブログ</a></li>
+						<li><a href="#">@jinjaken</a></li>
+					</ul>
+				</ul>
+			</nav>
+			<div id="footer">
+				<footer id="global">
+					<p><small>&copy 2007-2013 東京大学神社研究会</small></p>
+				</footer>
+			</div><!-- footer -->
+		</div><!-- container -->
+	</body>
+</html>

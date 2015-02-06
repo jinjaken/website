@@ -1,0 +1,10 @@
+img = new Array();
+img[0] = "img/top-image_001.jpg";
+img[1] = "img/top-image_002.jpg";
+img[2] = "img/top-image_003.jpg";
+img[3] = "img/top-image_004.jpg";
+img[4] = "img/top-image_005.jpg";
+img[5] = "img/top-image_006.jpg";
+img[6] = "img/top-image_007.jpg";
+n = Math.floor(Math.random()*img.length);
+document.write("<img src='"+img[n]+"' border='0'>");

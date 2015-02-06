@@ -1,0 +1,369 @@
+@charset "utf-8";
+
+/* リセットとclearfix */
+*{ margin: 0; padding: 0; }
+ul,ol{ list-style: none; }
+a{ text-decoration: none; }
+img{ vertical-align: middle; }
+header, footer, nav, section, article, aside { display:block; }
+
+.clearfix:after {
+    display:block;
+    clear:both;
+    height:0px;
+    visibility:hidden;
+    content:".";
+}
+
+.clearfix {
+    min-height: 1px; /*IE6、7対策*/
+}
+
+* html .clearfix {
+    height: 1px;
+    /*¥*//*/ /*MAC IE5.x対策*/
+    height: auto;
+    overflow: hidden;
+}
+
+/* 基本設定 */
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+
+p {
+	line-height: 1.8;
+}
+
+li {
+	line-height: 1.5;
+}
+
+p a {
+	color: #2e93ff;
+}
+
+p a:hover {
+	text-decoration: underline;
+}
+
+/* global header */
+header#hglobal {
+	width: 900px;
+	margin: 0 auto;
+	padding-top: 70px;
+}
+
+header#hglobal h1 {
+	font-size: 30px;
+	font-size: 3rem;
+	font-weight: lighter;
+	width: 9em;
+	float: left;
+}
+
+header#hglobal ul {
+	float: left;
+}
+
+header#hglobal ul li {
+	font-size: 13px;
+	font-size: 1.3rem;
+	font-weight: bold;
+	width: 6.3em;
+	line-height: 2;
+	text-align: center;
+	float: left;
+	margin-top: 17px;
+	margin: 1.7rem 0 0 20px;
+}
+
+header#hglobal ul li:nth-child(2) {
+	width: 4.1em;
+}
+
+header#hglobal ul li:nth-child(3) {
+	width: 4.1em;
+}
+
+header#hglobal ul li:nth-child(4) {
+	width: 2.1em;
+}
+
+header#hglobal ul li:nth-child(5) {
+	width: 4.1em;
+}
+
+header#hglobal ul li:nth-child(6) {
+	width: 3.1em;
+}
+
+header#hglobal a {
+	color: #000000;
+}
+
+header#hglobal h1 a {
+	font-family: "Hiragino Maru Gothic Pro" ,"HGMaruGothicMPRO";
+}
+
+header#hglobal li a.now {
+	color: #348f35;
+}
+
+header#hglobal li a:hover {
+	color: #777777;
+}
+
+/* メインコンテンツ */
+div#content {
+	width: 900px;
+	margin: 0 auto;
+}
+
+/* indexページのタイルレイアウト */
+div.iboxes {
+	float: left;
+	color: #ffffff;
+}
+
+div.iboxes h2 {
+	font-weight: lighter;
+	margin: 40px 0 20px 40px;
+}
+
+div.iboxes p {
+	margin: 0 40px;
+}
+
+div.iboxes a {
+	color: #ffffff;
+}
+
+div.iboxes a:hover {
+	font-weight: bold;
+}
+
+div#lt {
+	width: 560px;
+	height: 560px;
+	background-image: url(img/img62.png);
+	background-size: cover;
+	margin: 10px 10px 10px 0;
+}
+
+div#rt {
+	width: 320px;
+	height: 560px;
+	background-color: #83a94c;
+	margin: 10px 0 10px 10px;
+	background-image: url(img/tri.png);
+	background-position: right bottom;
+	background-size: 100px;
+	background-repeat: no-repeat;
+}
+
+div#rt h2 {
+}
+
+div#rt li {
+	margin: 10px 40px 0 40px;
+}
+
+div#rt ul li:nth-child(1){
+	margin-top: 20px;
+}
+
+div#lb {
+	width: 560px;
+	height: 220px;
+	background-color: #5490b2;
+	margin: 10px 10px 10px 0;
+}
+
+div#lb li {
+	margin: 0 0 5px 40px;
+}
+
+div#lb img {
+	margin-top: -7px;
+}
+
+div#rb {
+	width: 320px;
+	height: 220px;
+	background-color: #ed8174;
+	margin: 10px 0 10px 10px;
+}
+
+div#rb ul {
+	font-size: 30px;
+	font-size: 3rem;
+	margin: 40px 0 0 40px;
+}
+
+div#rb a {
+	font-family: "Courier New";
+}
+
+/* index以外の２カラムレイアウト */
+div#mainboxes {
+	width: 580px;
+	margin-right: 20px;
+	float: left;
+}
+
+div#sindex {
+	width: 498px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	background-color: #fbf9f1;
+	border: solid 1px #f5e5b1;
+	padding: 40px;
+	padding-top: 20px;
+}
+
+div#sindex h2 {
+	font-weight: lighter;
+	font-size: 24px;
+	font-size: 2.4rem;
+	line-height: 1;
+	width: 6em;
+	text-align: center;
+	padding: 15px 20px;
+	margin-top: -47px;
+	margin-left: -67px;
+	background-color: #ee827c;
+	color:#ffffff;
+}
+
+div#sindex p {
+	padding: 33px 15px 20px;
+}
+
+div#sindex p a {
+	font-size: 24px;
+	font-size: 2.4rem;
+}
+
+div#mainboxes section.child {
+	width: 498px;
+	margin-bottom: 20px;
+	background-color: #fbf9f1;
+	border: solid 1px #f5e5b1;
+	padding: 40px 40px 14px;
+}
+
+div#mainboxes section.child h3 {
+	font-weight: lighter;
+	font-size: 23px;
+	font-size: 2.3rem;
+	padding: 10px;
+	padding-left: 20px;
+	border-left: solid 5px #ee827c;
+}
+
+div#mainboxes section.child p {
+	padding: 20px 25px;
+}
+
+div#mainboxes section.child p.totop {
+	padding: 0;
+	margin-top: 10px;
+	text-align: right;
+}
+
+div#mainboxes section.grandchild {
+	background-color: #ffffff;
+	border: solid 1px #f4e4b0;
+	border-radius: 3px;
+	padding-top: 20px;
+	margin-top: 20px;
+}
+
+div#mainboxes section.grandchild:nth-of-type(1){
+	margin-top: 0!important;
+}
+
+div#mainboxes section.grandchild h4 {
+	border-left: solid 5px #fcc800;
+	font-size: 20px;
+	font-size: 2rem;
+	font-weight: lighter;
+	margin-left: 15px;
+	padding: 5px;
+	padding-left: 20px;
+}
+
+div#mainboxes section.grandchild h5 {
+	font-size: 17px;
+	font-size: 1.7rem;
+	margin-left: 40px;
+}
+
+div#mainboxes section.grandchild p {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+div#mainboxes section.grandchild ul {
+	font-size: 14px;
+	font-size: 1.4rem;
+	padding: 20px 20px 20px 40px;
+	list-style: circle;
+}
+
+div#mainboxes section.grandchild li {
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+div#mainboxes section.grandchild li.child {
+	margin-left: 10px;
+	list-style: square;
+}
+
+div#mainboxes section.grandchild li.clast {
+	margin-bottom: 10px;
+}
+
+aside#sidebar {
+	width: 218px;
+	padding: 20px 40px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	border: solid 1px #c7dc68;
+	float: right;
+}
+
+aside#sidebar li.child {
+	margin: 5px 0 5px 1em;
+}
+
+aside#sidebar li a {
+	color: #000000;
+	font-weight: bold;
+}
+
+aside#sidebar li a:hover {
+	color: #9eb82a;
+}
+
+aside#sidebar li.child a {
+	font-weight: lighter;
+}
+
+/* global footer */
+footer#fglobal {
+	width: 900px;
+	margin: 0 auto;
+	padding-bottom: 70px;
+}
+
+footer#fglobal p.copyright {
+	text-align: right;
+}

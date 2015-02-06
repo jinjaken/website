@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title>東京大学神社研究会</title>
+		<link rel="stylesheet" href="style.css"> 
+		<script src="../js/jquery-1.10.1.min.js"></script>
+		<script src="../js/flipsnap.min.js"></script>
+		<script>
+			var itemnum = 6;
+		</script> <!-- itemnumの初期化 -->
+		<script>
+			$(function(){
+				$(".submenu").hide();
+				$("#globalnav > li.id2").click(function(){
+					if($('.submenu.id1').is(':visible')){
+						$(".submenu.id1").slideUp("normal", function(){
+							$(".submenu.id2").slideDown();
+						});
+					} else {
+						$(".submenu.id2").slideToggle();
+					}
+				});
+				
+				$("#globalnav > li.id1").click(function(){
+					if($('.submenu.id2').is(':visible')){
+						$(".submenu.id2").slideUp("normal", function(){
+							$(".submenu.id1").slideDown();
+						});
+					} else {
+						$(".submenu.id1").slideToggle();
+					}
+				});
+			});
+		</script><!-- navのアニメーション -->
+	</head>
+	<body>
+		<div id="container">
+			<header id="globalhead">
+				<h1>東京大学神社研究会<br><span class="small">The University Of Tokyo Society for Jinja Studies</span></h1>
+			</header>
+			<div id="content">
+				<div class="viewpoint">
+					<div class="flipsnap">
+						<div class="item"><img src="img6.jpg" width="320px"></div>
+						<div class="item"><img src="img5.jpg" width="320px"></div>
+						<div class="item"><img src="img4.jpg" width="320px"></div>
+						<div class="item"><img src="img3.jpg" width="320px"></div>
+						<div class="item"><img src="img2.jpg" width="320px"></div>
+						<div class="item"><img src="img1.jpg" width="320px"></div>
+					</div>
+				</div>
+				<script>
+					var flipsnap = Flipsnap('.flipsnap');
+					flipsnap.moveToPoint(itemnum, 0);
+					var istouching = false;
+					var timer;
+					
+					function automove(){
+						if(!istouching){
+							if(flipsnap.hasPrev()){
+								flipsnap.toPrev(500);
+							} else {
+								flipsnap.moveToPoint(itemnum, 500);
+							}
+						}
+					}
+					
+					timer = setInterval("automove()", 5000);
+					
+					flipsnap.element.addEventListener('fstouchstart', function(){
+						istouching = true;
+						clearInterval(timer);
+					}, false);
+					flipsnap.element.addEventListener('fstouchend', function(ev){
+						istouching = false;
+						timer = setInterval("automove()", 5000);
+					}, false);
+					
+				</script> <!-- flipsnap起動＆automoveのイベント登録 -->
+				<nav>
+					<ul id="globalnav" class="clearfix icon">
+						<li class="left">神社研究会<br>について</li>
+						<li class="id1">活動内容</li>
+						<li>メディア<br>での紹介</li>
+						<li class="right id2">アクセス</li>
+					</ul>
+					<div class="id1 submenu">
+						<ul class="folder icon">
+							<li class="left"><a href="#">探訪部会</a></li>
+							<li><a href="#">勉強部会</a></li>
+							<li><a href="#">怪異部会</a></li>
+							<li class="right"><a href="#">神楽部会</a></li>
+							<li class="left"><a href="#">雅楽部会</a></li>
+							<li><a href="#">会誌</a></li>
+						</ul>
+					</div>
+					<div class="id2 submenu">
+						<ul class="folder icon">
+							<li class="left"><a href="#">FAQ</li>
+							<li><a href="#">入会<br>するには</a></li>
+							<li><a href="#">連絡を<br>取るには</a></li>
+							<li class="right"><a href="#">活動場所</a></li>
+						</ul>
+					</div>
+				</nav>
+				<nav>
+					<ul class="tb">
+						<li class="left"><a href="#">twitter</a></li>
+						<li class="right"><a href="#">blog</a></li>
+					</ul>
+				</nav>
+				<section id="notion">
+					<h2>お知らせ</h2>
+					<hr class="w100">
+					<article>
+						<h3>ホームページを大幅に更新しました<br><data>2013.06.06</data></h3>
+						<p>２年ぶりにホームページを作り直しました。スマートフォンにも対応し、今後は現在の神社研究会の活動をより分かりやすくお伝えしてゆきます。</p>
+					</article>
+					<hr>
+					<article>
+						<h3>第86回五月祭のおしらせ<br><data>2013.05.16</data></h3>
+						<p>今週末の5/18，19には東京大学で五月祭が行われます。神社研は19日に神楽部会の発表を行います。</p>
+					</article>
+					<hr>
+					<article>
+						<h3>平成25年度　新歓活動＆定期活動予定<br><data>2013.03.29</data></h3>
+						<p>詳しくは<a href="#">こちら</a>で。</p>
+					</article>
+					<hr>
+					<article>
+						<h3>会誌『千五百秋』第三号の情報を追加しました<br><data>2011.11.22</data></h3>
+						<p>会誌『千五百秋』のページに、第三号の情報を追加しました。</p>
+					</article>
+				</section>
+			</div>		
+			<div id="footer">
+				<footer id="global">
+					<p><small>&copy 2007-2013 東京大学神社研究会</small></p>
+				</footer>
+			</div>
+		</div>
+	</body>
+</html>

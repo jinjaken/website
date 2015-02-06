@@ -1,0 +1,305 @@
+@charset "utf-8";
+*{ margin: 0; padding: 0; }
+ul,ol{ list-style: none; }
+a{ text-decoration: none; }
+img{ vertical-align: middle; }
+header, footer, nav, section, article, figure, aside { display:block; }
+
+/* 以上初期化 */
+
+span.red { color: #ff0000; }
+
+p.bread {
+	font-size: 0.8em!important;
+	margin: 10px 0 5px 4px!important;
+}
+
+a {
+	color: #2e93ff;
+}
+
+a:hover {
+	border-bottom: solid 1px #2e93ff;
+}
+
+header#globalhead {
+	width: 100%;
+}
+
+header#globalhead h1 {
+	font-family: "Hiragino Maru Gothic Pro" ,"HG丸ゴシックM-PRO";
+	font-weight: lighter;
+	font-size: 1.3em;
+	line-height: 1em;
+	margin: 20px 0 15px 0;
+	text-align: center;
+}
+
+header#globalhead span.small {
+	font-size: 0.5em;
+}
+
+div#container {
+	width: 100%;
+}
+
+.viewpoint {
+	width: 320px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.flipsnap {
+	width: 1920px;
+}
+
+.item {
+	float: left;
+	width: 320px;
+}
+
+ul.tb li {
+	float: left;
+}
+
+ul.tb li.left {
+	margin: 4px 2px 4px 4px;
+}
+
+ul.tb li.right {
+	margin: 4px 4px 4px 2px;
+}
+
+ul.tb a {
+	display: block;
+	line-height: 2em;
+	width: 154px;
+	background-color: #d8c800;
+	color: #ffffff;
+	text-align: center;
+	border-radius: 3px;
+	border: none;
+}
+
+ul.icon li {
+	float: left;
+	display: block;
+	width: 75px;
+	height: 75px;
+	margin: 4px 2px 0px 2px;
+	background-color: #3b8474;
+	border-radius: 3px;
+	color: #ffffff;
+	font-size: 0.8em;
+	text-align: center;
+}
+
+ul.icon li.left {
+	margin-left: 4px;
+}
+
+ul.icon li.right {
+	margin-right: 4px;
+}
+
+section#notion {
+	clear: both;
+	width: 310px; /* border 分引いてある */
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 4px;
+	border: solid #e6e6e6;
+	border-width: 1px;
+	border-radius: 3px;
+}
+
+section#notion h2 {
+	font-size: 1.2em;
+	font-weight: 100;
+	margin: 10px 0 8px 10px;
+}
+
+section#notion article {
+	margin: 20px;
+}
+
+hr {
+	border: dashed #d5d5d5;
+	border-width: 1px 0 0 0;
+	width: 280px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+hr.w100 {
+	width: 100%;
+}
+
+section#notion article p {
+	font-size: 0.75em;
+	line-height: 2em;
+}
+
+section#notion article h3 {
+	font-size: 0.9em;
+	font-weight: 100;
+	margin: 0 0 7px 0;
+}
+
+section#notion article h3 data {
+	font-size: 0.7em;
+	color: #777777;
+}
+
+section#group {
+	clear: both;
+}
+
+section#group article {
+	width: 310px; /* border 分引いてある */
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	border: solid #e6e6e6;
+	border-width: 1px;
+	border-radius: 3px;
+}
+
+section#group h2 {
+	line-height: 2.2em;/* 2.5em */
+	font-weight: 100;
+	padding-left: 10px;
+	border-left: solid 20px #d8c800;
+	background-color: #3b8474;/**/
+	color: #ffffff;/**/
+}
+
+section#group h3 {
+	font-weight: 100;
+	margin: 10px;
+}
+
+section#group p {
+	margin: 15px;
+	font-size: 0.9em;
+	line-height: 1.7em;
+}
+
+section#group article img {
+	border-radius: 2px;
+}
+
+clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+footer#global {
+	clear: both;
+	background-color: #444444;
+}
+
+footer#global p{
+	text-align: center;
+	line-height: 3em;
+	font-size: 0.8em;
+	color: #ffffff;
+}
+
+.submenu {
+	clear: both;
+}
+
+.submenu:before {
+	box-sizing: border-box;
+	display: block;
+	content: "";
+	width: 20px;
+	padding-top: 4px;
+	border-bottom: solid 8px #444444;
+	border-top: solid 0px transparent;
+	border-left: solid 10px transparent;
+	border-right: solid 10px transparent;
+}
+
+.submenu.id1:before {
+	margin-left: 110px;
+}
+
+.submenu.id2:before {
+	margin-left: 268px;
+}
+
+.folder {
+	padding-top: 4px;
+	padding-bottom: 6px;
+	width: 320px;
+	background-color: #444444;
+}
+
+.submenu.id1 .folder {
+	height: 160px;
+}
+
+.submenu.id2 .folder {
+	height: 80px;
+}
+
+.folder a {
+	color: #ffffff;
+}
+
+.folder li {
+	background-color: #888888!important;
+}
+
+
+nav#fullnav {
+	padding-top: 5px;
+	color: #ffffff;
+	background-color: #444444;
+}
+
+nav#fullnav:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+nav#fullnav h2 {
+	font-size: 1.2em;
+	line-height: 2.5em;
+	margin-left: 15px;
+	font-weight: 100;
+}
+
+nav#fullnav ul.parent {
+	padding: 0 0 10px 20px;
+	width: 135px;
+	float: left;
+}
+
+nav#fullnav ul.parent li {
+	font-size: 0.95em;
+	line-height: 2em;
+}
+
+nav#fullnav ul.child {
+	margin-top: 5px;
+}
+
+nav#fullnav ul.child li {
+	font-size: 0.9em;
+	margin-left: 1em;
+	line-height: 1.5em;
+}
+
+nav#fullnav a {
+	color: #ffffff!important;
+}
+
+nav#fullnav a:hover {
+	border: none;
+	color: #2e93ff!important;
+}

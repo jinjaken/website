@@ -1,0 +1,182 @@
+/* äÓñ{éñçÄ */
+
+body {
+	background-color: #ffffff;
+	margin:0;
+	padding:0;
+	color: #333333;
+	font-family:"ÇlÇr ÇoÉSÉVÉbÉN";
+	font-size:13px;
+}
+
+td{
+	font-size:13px;
+}
+
+img{
+	border:0;
+}
+
+strong{color: #B50000;}
+
+
+
+a:link { color: #2E3192; } 
+a:visited { color: #2E3192; } 
+a:hover { color: #FF0000; } 
+a:active { color: #FF0000; }
+
+a {
+text-decoration: none;
+font-weight:bold;
+}
+
+h1{
+	font-size:17px;
+	margin-top:0px;
+	padding-left:7px;
+	margin-bottom:25px;
+	color:#000000;
+	background-color:#dddddd;
+}
+
+h2{
+	color:#890000;
+}
+
+/* äOòg */
+#frame{
+	background:#ffffff;
+	width:805px;
+	text-align:left;
+	padding-top:5px;
+	padding-bottom:0px;
+}
+
+div#frame:after {
+	content : "";
+	display : block;
+	height : 0;
+	clear : both;
+} 
+
+
+/* ÉwÉbÉh */
+
+#top-image{
+	width:800px;
+	height:200px;
+	float:left;
+	border:1px #a0a0a0 solid;
+}
+
+
+#body{
+
+	padding-top:10px;
+	float:left;
+}
+
+
+#menu{
+	background:url(img/menu-back.gif);
+	width:175px;
+	height:800px;
+	float:left;
+	border:1px #a0a0a0 solid;
+	line-height:160%;
+}
+
+.menu-text{
+	padding-right:10px;
+}
+.menu-text a{
+	font-weight:normal;
+}
+
+#main{
+
+	padding-left:10px;
+	width:615px;
+	float:left;
+}
+
+#banner{
+	width:615px;
+	height:90px;
+	border:1px #a0a0a0 solid;
+
+}
+
+#content{
+	margin-top:10px;
+	background:url(img/content-back.gif) top;
+	background-position:0px 46px;
+	width:615px;
+	height:660px;
+	border:1px #a0a0a0 solid;
+}
+
+#content-index{
+	margin-top:10px;
+	background:url(img/content-back.gif) top;
+	background-position:0px 240px;
+	width:615px;
+	height:660px;
+	border:1px #a0a0a0 solid;
+}
+
+#content-index-title{
+	background:url(img/index_title.gif) top;
+	width:615px;
+	height:240px;
+}
+
+#content-page{
+	margin-top:10px;
+	background:url(img/content-back.gif) top;
+	background-position:0px 46px;
+	width:615px;
+	height:660px;
+	border:1px #a0a0a0 solid;
+}
+
+#content-page-title{
+	width:615px;
+	height:46px;
+}
+
+
+.content-text{
+	padding:30px;
+	line-height:180%;
+
+}
+
+#foot{
+	padding-top:30px;
+	padding-bottom:30px;
+	width:800px;
+	height:70px;
+	float:left;
+
+}
+
+
+
+
+.content-image{
+	width:540px;
+	height:150px;
+	border:solid 2px #a0a0a0;
+	background-color:#f5f5ff;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.content-image-cell{
+	width:170px;
+	float:left;
+	margin:3px;
+}
+	
