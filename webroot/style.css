@@ -1,4 +1,3 @@
-
 .clearfix:after {
     display:block;
     clear:both;
@@ -60,7 +59,6 @@
 	margin: 0 32px 0 0;
 }
 
-
 @media screen and (max-width: 640px) {
 	img {
 		width: 90%;
@@ -85,6 +83,10 @@ a.black:hover {
 	color: #777777;
 }
 
+li {
+	margin: 8px 0;
+}
+
 html, body, div {
 	padding: 0;
 	margin: 0;
@@ -98,6 +100,8 @@ html {
 
 body {
 	background-color: #f2f2f2;
+	font-size: 1.4em;
+	font-size: 1.4rem;
 }
 
 #global-header {
@@ -110,7 +114,8 @@ body {
 #global-header h1 {
 	width: 960px;
 	font-weight: normal;
-	font-size: 2.7em;
+	font-size: 1.9em;
+	font-size: 2.7rem;
 	margin: 0 auto;
 	padding: 0;
 }
@@ -122,16 +127,7 @@ body {
 	}
 }
 
-#global-header small {
-	font-size: 0.6em;
-}
-
-#global-header img {
-	vertical-align: middle;
-}
-
 #navigator {
-	font-size: 1.4em;
 	font-weight: bold;
 	width: 100%;
 	background-color: #ffffff;
@@ -160,6 +156,7 @@ body {
 #navigator li {
 	float: left;
 	list-style-type: none;
+	margin: 0;
 }
 
 #navigator li a {
@@ -217,7 +214,8 @@ body {
 }
 
 .box2 h2 {
-	font-size: 2.2em;
+	font-size: 1.6em;
+	font-size: 2.2rem;
 	margin: 8px 0 5px 0;
 	border-left: solid #ec6800 2px;
 	padding-left: 14px;
@@ -225,19 +223,20 @@ body {
 
 @media screen and (max-width: 640px) {
 	.box2 h2 {
-		font-size: 2em;
+		font-size: 1.4em;
+		font-size: 2rem;
 	}
 }
 
 .box2 h3 {
-	font-size: 2em;
+	font-size: 1.4em;
+	font-size: 2rem;
 	margin: 32px 0 16px 16px;
 	padding: 0 14px 0;
 	border-left: solid #ffd900 2px;
 }
 
 .box2 p {
-	font-size: 1.4em;
 	margin: 10px 0 0 0;
 	padding-left: 16px;
 }
@@ -268,10 +267,6 @@ body {
 	padding: 0 0 0 16px;
 }
 
-.box3.right li {
-	font-size: 1.4em;
-}
-
 @media screen and (max-width: 1032px) {
 	.box3.right {
 		width: 47%;
@@ -293,7 +288,8 @@ body {
 }
 
 .box1 h3 {
-	font-size: 2em;
+	font-size: 1.4em;
+	font-size: 2rem;
 	margin: 0px 0 4px 0;
 	padding-left: 10px;
 	border: none;
@@ -316,7 +312,6 @@ body {
 }
 
 .box1 p {
-	font-size: 1.4em;
 	margin: 0!important;
 	padding-top: 5px!important;
 	padding-left: 10px!important;
@@ -356,13 +351,8 @@ body {
 
 #global-footer p {
 	margin: 0;
-	font-size: 1.4em;
 	padding: 10px 20px;
 	clear: both;
-}
-
-#nav-footer {
-	font-size: 1.4em;
 }
 
 #nav-footer ul {
@@ -379,13 +369,15 @@ body {
 	padding: 0 20px;
 }
 
+#nav-footer li {
+	margin: 0;
+}
+
 p#bread {
-	font-size: 1.4em;
 	padding: 0!important;
 }
 
 table {
-	font-size: 1.4em;
 	margin: 16px 32px;
 }
 
