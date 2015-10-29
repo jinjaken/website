@@ -1,0 +1,35 @@
+ErrorDocument 404 http://jinjaken.web.fc2.com/
+ErrorDocument 403 http://jinjaken.web.fc2.com/
+Options -Indexes
+Redirect permanent /katsudou.html http://jinjaken.web.fc2.com/act.html
+Redirect permanent /kifu.html http://jinjaken.web.fc2.com/
+Redirect permanent /gakkyuu/gakkyuu.html http://jinjaken.web.fc2.com/act-study.html
+Redirect permanent /isonokami.html http://jinjaken.web.fc2.com/magazine.html
+Redirect permanent /tanpou.html http://jinjaken.web.fc2.com/act-sansaku.html
+Redirect permanent /about/about.html http://jinjaken.web.fc2.com/introduction.html
+Redirect permanent /bunshuu/gokoku.html http://jinjaken.web.fc2.com/magazine.html
+Redirect permanent /tanpou/megaten.html http://jinjaken.web.fc2.com/event-fes.html
+Redirect permanent /kaishi/soukannozi.html http://jinjaken.web.fc2.com/magazine.html
+Redirect permanent /pv.html http://jinjaken.web.fc2.com/introduction.html
+Redirect permanent /tanpou/gogatusai.html http://jinjaken.web.fc2.com/event-fes.html
+Redirect permanent /bunshuu/kyouiku.html http://jinjaken.web.fc2.com/magazine.html
+Redirect permanent /tanpou/nichinichi.html http://jinjaken.web.fc2.com/spe-media.html
+Redirect permanent /about/soshiki.html http://jinjaken.web.fc2.com/introduction.html
+Redirect permanent /tanpou/haison.html http://jinjaken.web.fc2.com/act-sansaku.html
+Redirect permanent /kaishi/soukan.html http://jinjaken.web.fc2.com/magazine.html
+Redirect permanent /tanpou/shokuzyu.html http://jinjaken.web.fc2.com/act-sansaku.html
+Redirect permanent /tanpou/ooyama.html http://jinjaken.web.fc2.com/act-sansaku.html
+Redirect permanent /tanpou/nakano.html http://jinjaken.web.fc2.com/act-sansaku.html
+Redirect permanent /up.html http://jinjaken.web.fc2.com/file.html
+Redirect permanent /shishin.html http://jinjaken.web.fc2.com/introduction.html
+Redirect permanent /bunshuu.html http://jinjaken.web.fc2.com/magazine.html
+Redirect permanent /radio.html http://jinjaken.web.fc2.com/spe-media.html
+Redirect permanent /other.html http://jinjaken.web.fc2.com/
+Redirect permanent /gagaku/gagaku.html http://jinjaken.web.fc2.com/act-gagaku.html
+Redirect permanent /tanpou/kizi.html http://jinjaken.web.fc2.com/act-sansaku.html
+Redirect permanent /about/chiiki.html http://jinjaken.web.fc2.com/local.html
+Redirect permanent /houmei.html http://jinjaken.web.fc2.com/
+Redirect permanent /tanpou/keisetu.html http://jinjaken.web.fc2.com/spe-media.html
+Redirect permanent /tanpou/yasukuni.html http://jinjaken.web.fc2.com/event-fes.html
+Redirect permanent /tanpou/zindaizi.html http://jinjaken.web.fc2.com/act-sansaku.html
+Redirect permanent /tanpou/asanama.html http://jinjaken.web.fc2.com/act-sansaku.html

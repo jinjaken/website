@@ -1,0 +1,5 @@
+<Files ~ "^\.ht">
+deny from all
+</Files>
+
+Redirect permanent / http://jinjaken.web.fc2.com/
