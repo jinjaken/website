@@ -248,6 +248,13 @@ body {
 	padding: 0 16px 0 0;
 }
 
+.box4.left {
+	width: 832px;
+	float: left;
+	padding: 0 16px 0 0;
+}
+
+
 @media screen and (max-width: 1032px) {
 	.box3.left {
 		width: 47%;
@@ -407,4 +414,3 @@ table.wb td, th {
 	padding: 4px 8px;
 	min-width: 5em;
 }
-
